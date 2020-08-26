@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/vaziliybober/frontend-project-lvl1#readme",
   "bin": {
-    "mind-games": "bin/mind-games.js"
+    "mind-games": "bin/mind-games.js",
+    "parity-check": "bin/parity-check.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"

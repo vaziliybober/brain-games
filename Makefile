@@ -9,3 +9,6 @@ publish:
 
 lint:
 	npx eslint .
+
+parity-check:
+	node bin/parity-check.js

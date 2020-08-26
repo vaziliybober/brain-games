@@ -1,6 +1,6 @@
 name: Continuous integration workflow
 # This workflow is triggered on pushes to the repository.
-on: [test]
+on: [push]
 
 jobs:
   build:

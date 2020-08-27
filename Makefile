@@ -1,8 +1,8 @@
 install:
 	npm install
 
-mind-games:
-	node bin/mind-games.js
+brain-games:
+	node bin/brain-games.js
 
 publish:
 	npm publish --dry-run
@@ -10,5 +10,5 @@ publish:
 lint:
 	npx eslint .
 
-parity-check:
-	node bin/parity-check.js
+brain-even:
+	node bin/brain-even.js

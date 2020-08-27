@@ -1,7 +1,7 @@
 install:
 	npm install
 
-start:
+mind-games:
 	node bin/mind-games.js
 
 publish:

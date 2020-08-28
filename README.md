@@ -12,3 +12,6 @@ brain-calc: what's the result of the expression?
 
 brain-gcd: what's the greatest common divisor of the numbers?
 [![asciicast](https://asciinema.org/a/356402.svg)](https://asciinema.org/a/356402)
+
+brain-progression: what's the missing element in the arythmetic progression?
+[![asciicast](https://asciinema.org/a/356403.svg)](https://asciinema.org/a/356403)

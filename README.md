@@ -8,7 +8,7 @@ brain-even: is the number even?
 [![asciicast](https://asciinema.org/a/356203.svg)](https://asciinema.org/a/356203)
 
 brain-calc: what's the result of the expression?
-[![asciicast](https://asciinema.org/a/356387.svg)](https://asciinema.org/a/356387)
+[![asciicast](https://asciinema.org/a/356400.svg)](https://asciinema.org/a/356400)
 
-brain-gcd: what's the greatest common divisor of the numbers
-[![asciicast](https://asciinema.org/a/356385.svg)](https://asciinema.org/a/356385)
+brain-gcd: what's the greatest common divisor of the numbers?
+[![asciicast](https://asciinema.org/a/356402.svg)](https://asciinema.org/a/356402)

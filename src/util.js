@@ -25,3 +25,17 @@ export const arythmProgression = (first, step, length) => {
 
   return result;
 };
+
+export const isPrime = (number) => {
+  if (number === 1) {
+    return false;
+  }
+
+  for (let i = 0; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};

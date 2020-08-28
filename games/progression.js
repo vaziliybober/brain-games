@@ -16,8 +16,9 @@ const buildQuestion = () => {
 const findAnswer = (question) => {
   const progression = question.split(' ').map((x) => (x === '..' ? x : Number(x)));
   const replacementIndex = progression.indexOf('..');
-  const number = replacementIndex >= 2 ? progression[0] : progression[2];
-  const nextNumber = replacementIndex >= 2 ? progression[1] : progression[3];
+  const offset = replacementIndex >= 2 ? 0 : 2;
+  const number = progression[0 + offset];
+  const nextNumber = progression[1 + offset];
   const step = nextNumber - number;
 
   const result = replacementIndex === 0 ? progression[1] - step

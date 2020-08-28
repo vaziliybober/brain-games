@@ -16,11 +16,9 @@ export const gcd = (a, b) => {
 
 export const arythmProgression = (first, step, length) => {
   const result = [];
-  let current = first;
 
   for (let i = 0; i < length; i += 1) {
-    result.push(current);
-    current += step;
+    result.push(first + step * i);
   }
 
   return result;

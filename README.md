@@ -15,3 +15,6 @@ brain-gcd: what's the greatest common divisor of the numbers?
 
 brain-progression: what's the missing element in the arythmetic progression?
 [![asciicast](https://asciinema.org/a/356403.svg)](https://asciinema.org/a/356403)
+
+brain-prime: is the number prime?
+[![asciicast](https://asciinema.org/a/356426.svg)](https://asciinema.org/a/356426)

@@ -5,7 +5,7 @@ const buildQuestion = () => {
   const from = 1;
   const to = 100;
 
-  return randint(from, to);
+  return String(randint(from, to));
 };
 
 const findAnswer = (question) => {

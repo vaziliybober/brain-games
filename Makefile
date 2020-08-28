@@ -10,6 +10,9 @@ publish:
 lint:
 	npx eslint .
 
+lint-fix:
+	npx eslint --fix .;
+
 link: 
 	sudo npm link
 

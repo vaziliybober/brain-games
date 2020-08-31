@@ -1,5 +1,5 @@
-import game from '../src/index.js';
-import { randint } from '../src/util.js';
+import game from '../index.js';
+import { randint } from '../util.js';
 
 const buildQuestion = () => {
   const from = 1;

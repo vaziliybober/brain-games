@@ -1,5 +1,5 @@
-import game from '../src/index.js';
-import { randint, isPrime } from '../src/util.js';
+import game from '../index.js';
+import { randint, isPrime } from '../util.js';
 
 const buildQuestion = () => {
   const from = 1;

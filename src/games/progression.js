@@ -1,5 +1,5 @@
-import game from '../src/index.js';
-import { randint, arythmProgression } from '../src/util.js';
+import game from '../index.js';
+import { randint, arythmProgression } from '../util.js';
 
 const buildQuestion = () => {
   const firstElem = randint(1, 10);

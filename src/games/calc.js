@@ -1,5 +1,5 @@
-import game from '../src/index.js';
-import { randint, randchoice } from '../src/util.js';
+import game from '../index.js';
+import { randint, randchoice } from '../util.js';
 
 const parseOperator = (string) => {
   if (string === '+') {

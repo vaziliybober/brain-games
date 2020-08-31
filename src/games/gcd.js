@@ -17,9 +17,9 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  const rules = 'Find the greatest common divisor of given numbers.';
+  const taskDescription = 'Find the greatest common divisor of given numbers.';
 
-  game(rules, buildQuestion, findAnswer);
+  game(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

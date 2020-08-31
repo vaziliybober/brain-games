@@ -37,9 +37,9 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  const rules = 'What is the result of the expression?';
+  const taskDescription = 'What is the result of the expression?';
 
-  game(rules, buildQuestion, findAnswer);
+  game(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

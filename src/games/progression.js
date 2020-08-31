@@ -28,9 +28,9 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  const rules = 'What number is missing in the progression?';
+  const taskDescription = 'What number is missing in the progression?';
 
-  game(rules, buildQuestion, findAnswer);
+  game(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

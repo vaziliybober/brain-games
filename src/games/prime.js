@@ -11,9 +11,9 @@ const buildQuestion = () => {
 const findAnswer = (question) => (isPrime(Number(question)) ? 'yes' : 'no');
 
 const start = () => {
-  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  game(rules, buildQuestion, findAnswer);
+  game(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

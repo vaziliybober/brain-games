@@ -9,7 +9,7 @@ const greet = () => {
   return name;
 };
 
-const game = (rules, buildQuestion, findAnswer, winstreak = 3) => {
+const game = (taskDescription, buildQuestion, findAnswer, winstreak = 3) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
       const question = buildQuestion();
@@ -30,7 +30,7 @@ const game = (rules, buildQuestion, findAnswer, winstreak = 3) => {
   };
 
   const name = greet();
-  console.log(rules);
+  console.log(taskDescription);
 
   const victory = play();
 

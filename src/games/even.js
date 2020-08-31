@@ -17,9 +17,9 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  game(rules, buildQuestion, findAnswer);
+  game(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

@@ -1,8 +1,8 @@
 # Brain Games
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vaziliybober/frontend-project-lvl1)
 
-![Continuous integration workflow](https://github.com/vaziliybober/frontend-project-lvl1/workflows/Continuous%20integration%20workflow/badge.svg)
+[![Continuous integration workflow](https://github.com/vaziliybober/frontend-project-lvl1/workflows/Continuous%20integration%20workflow/badge.svg)](https://github.com/vaziliybober/frontend-project-lvl1/actions)
 
 brain-even: is the number even?
 [![asciicast](https://asciinema.org/a/356203.svg)](https://asciinema.org/a/356203)

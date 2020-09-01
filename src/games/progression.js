@@ -1,6 +1,8 @@
 import game from '../index.js';
 import { genRandInt } from '../util.js';
 
+const taskDescription = 'What number is missing in the progression?';
+
 const arythmProgression = (first, step, length) => {
   const result = [];
 
@@ -38,8 +40,6 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  const taskDescription = 'What number is missing in the progression?';
-
   game(taskDescription, buildQuestion, findAnswer);
 };
 

@@ -1,6 +1,8 @@
 import game from '../index.js';
 import { genRandInt, chooseRandElem } from '../util.js';
 
+const taskDescription = 'What is the result of the expression?';
+
 const parseOperator = (string) => {
   if (string === '+') {
     return (a, b) => a + b;
@@ -37,8 +39,6 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  const taskDescription = 'What is the result of the expression?';
-
   game(taskDescription, buildQuestion, findAnswer);
 };
 

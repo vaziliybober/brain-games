@@ -20,14 +20,16 @@ const isPrime = (number) => {
 const buildQuestion = () => {
   const from = 1;
   const to = 100;
+  const number = genRandInt(from, to);
 
-  return String(genRandInt(from, to));
+  return {
+    text: String(number),
+    answer: (isPrime(Number(number)) ? 'yes' : 'no'),
+  };
 };
 
-const findAnswer = (question) => (isPrime(Number(question)) ? 'yes' : 'no');
-
 const start = () => {
-  runGame(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion);
 };
 
 export default start;

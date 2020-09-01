@@ -7,19 +7,16 @@ const buildQuestion = () => {
   const from = 1;
   const to = 100;
 
-  return String(genRandInt(from, to));
-};
+  const number = genRandInt(from, to);
 
-const findAnswer = (question) => {
-  if (question % 2 === 0) {
-    return 'yes';
-  }
-
-  return 'no';
+  return {
+    text: String(number),
+    answer: number % 2 === 0 ? 'yes' : 'no',
+  };
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion);
 };
 
 export default start;

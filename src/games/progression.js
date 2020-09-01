@@ -20,27 +20,17 @@ const buildQuestion = () => {
   const replacementIndex = genRandInt(0, length);
 
   const progression = arythmProgression(firstElem, step, length);
+  const elemToReplace = progression[replacementIndex];
   progression[replacementIndex] = '..';
 
-  return progression.join(' ');
-};
-
-const findAnswer = (question) => {
-  const progression = question.split(' ').map((x) => (x === '..' ? x : Number(x)));
-  const replacementIndex = progression.indexOf('..');
-  const offset = replacementIndex >= 2 ? 0 : 2;
-  const number = progression[0 + offset];
-  const nextNumber = progression[1 + offset];
-  const step = nextNumber - number;
-
-  const result = replacementIndex === 0 ? progression[1] - step
-    : progression[replacementIndex - 1] + step;
-
-  return String(result);
+  return {
+    text: progression.join(' '),
+    answer: String(elemToReplace),
+  };
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion);
 };
 
 export default start;

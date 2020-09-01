@@ -18,20 +18,17 @@ const gcd = (a, b) => {
 const buildQuestion = () => {
   const from = 1;
   const to = 100;
+  const number1 = genRandInt(from, to);
+  const number2 = genRandInt(from, to);
 
-  return `${genRandInt(from, to)} ${genRandInt(from, to)}`;
-};
-
-const findAnswer = (question) => {
-  const parts = question.split(' ');
-  const number1 = parts[0];
-  const number2 = parts[1];
-
-  return String(gcd(number1, number2));
+  return {
+    text: `${number1} ${number2}`,
+    answer: String(gcd(number1, number2)),
+  };
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion);
 };
 
 export default start;

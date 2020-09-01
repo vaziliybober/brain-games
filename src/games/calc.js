@@ -24,22 +24,16 @@ const buildQuestion = () => {
   const to = 100;
   const operand1 = genRandInt(from, to);
   const operand2 = genRandInt(from, to);
-  const operator = chooseRandElem(['+', '-', '*']);
+  const operatorSign = chooseRandElem(['+', '-', '*']);
 
-  return `${operand1} ${operator} ${operand2}`;
-};
-
-const findAnswer = (question) => {
-  const parts = question.split(' ');
-  const operand1 = Number(parts[0]);
-  const operand2 = Number(parts[2]);
-  const operator = parseOperator(parts[1]);
-
-  return String(operator(operand1, operand2));
+  return {
+    text: `${operand1} ${operatorSign} ${operand2}`,
+    answer: String(parseOperator(operatorSign)(operand1, operand2)),
+  };
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion);
 };
 
 export default start;

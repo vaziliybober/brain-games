@@ -9,7 +9,7 @@ const greet = () => {
   return name;
 };
 
-const game = (taskDescription, buildQuestion, findAnswer, winstreak = 3) => {
+const runGame = (taskDescription, buildQuestion, findAnswer, winstreak = 3) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
       const question = buildQuestion();
@@ -43,4 +43,4 @@ const game = (taskDescription, buildQuestion, findAnswer, winstreak = 3) => {
   return victory;
 };
 
-export default game;
+export default runGame;

@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../index.js';
 import { genRandInt } from '../util.js';
 
 const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -19,7 +19,7 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  game(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../index.js';
 import { genRandInt } from '../util.js';
 
 const taskDescription = 'What number is missing in the progression?';
@@ -40,7 +40,7 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  game(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../index.js';
 import { genRandInt, chooseRandElem } from '../util.js';
 
 const taskDescription = 'What is the result of the expression?';
@@ -39,7 +39,7 @@ const findAnswer = (question) => {
 };
 
 const start = () => {
-  game(taskDescription, buildQuestion, findAnswer);
+  runGame(taskDescription, buildQuestion, findAnswer);
 };
 
 export default start;

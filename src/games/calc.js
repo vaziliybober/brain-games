@@ -1,5 +1,5 @@
 import game from '../index.js';
-import { randint, randchoice } from '../util.js';
+import { genRandInt, chooseRandElem } from '../util.js';
 
 const parseOperator = (string) => {
   if (string === '+') {
@@ -20,9 +20,9 @@ const parseOperator = (string) => {
 const buildQuestion = () => {
   const from = 1;
   const to = 100;
-  const operand1 = randint(from, to);
-  const operand2 = randint(from, to);
-  const operator = randchoice(['+', '-', '*']);
+  const operand1 = genRandInt(from, to);
+  const operand2 = genRandInt(from, to);
+  const operator = chooseRandElem(['+', '-', '*']);
 
   return `${operand1} ${operator} ${operand2}`;
 };

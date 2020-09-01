@@ -1,11 +1,11 @@
 import game from '../index.js';
-import { randint } from '../util.js';
+import { genRandInt } from '../util.js';
 
 const buildQuestion = () => {
   const from = 1;
   const to = 100;
 
-  return String(randint(from, to));
+  return String(genRandInt(from, to));
 };
 
 const findAnswer = (question) => {

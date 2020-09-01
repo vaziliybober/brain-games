@@ -1,5 +1,5 @@
 import game from '../index.js';
-import { randint } from '../util.js';
+import { genRandInt } from '../util.js';
 
 const gcd = (a, b) => {
   const iter = (result) => {
@@ -17,7 +17,7 @@ const buildQuestion = () => {
   const from = 1;
   const to = 100;
 
-  return `${randint(from, to)} ${randint(from, to)}`;
+  return `${genRandInt(from, to)} ${genRandInt(from, to)}`;
 };
 
 const findAnswer = (question) => {

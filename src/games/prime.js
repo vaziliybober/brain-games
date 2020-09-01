@@ -1,5 +1,19 @@
 import game from '../index.js';
-import { randint, isPrime } from '../util.js';
+import { randint } from '../util.js';
+
+const isPrime = (number) => {
+  if (number === 1) {
+    return false;
+  }
+
+  for (let i = 0; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
 
 const buildQuestion = () => {
   const from = 1;

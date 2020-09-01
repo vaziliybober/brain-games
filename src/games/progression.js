@@ -1,5 +1,15 @@
 import game from '../index.js';
-import { randint, arythmProgression } from '../util.js';
+import { randint } from '../util.js';
+
+const arythmProgression = (first, step, length) => {
+  const result = [];
+
+  for (let i = 0; i < length; i += 1) {
+    result.push(first + step * i);
+  }
+
+  return result;
+};
 
 const buildQuestion = () => {
   const firstElem = randint(1, 10);

@@ -1,5 +1,17 @@
 import game from '../index.js';
-import { randint, gcd } from '../util.js';
+import { randint } from '../util.js';
+
+const gcd = (a, b) => {
+  const iter = (result) => {
+    if (a % result === 0 && b % result === 0) {
+      return result;
+    }
+
+    return iter(result - 1);
+  };
+
+  return iter(Math.min(a, b));
+};
 
 const buildQuestion = () => {
   const from = 1;

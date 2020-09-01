@@ -3,14 +3,14 @@ import { genRandInt } from '../util.js';
 
 const taskDescription = 'What number is missing in the progression?';
 
-const arythmProgression = (first, step, length) => {
-  const result = [];
+const buildArythmProgression = (first, step, length) => {
+  const progression = [];
 
   for (let i = 0; i < length; i += 1) {
-    result.push(first + step * i);
+    progression.push(first + step * i);
   }
 
-  return result;
+  return progression;
 };
 
 const buildQuestion = () => {
@@ -19,7 +19,7 @@ const buildQuestion = () => {
   const length = 10;
   const replacementIndex = genRandInt(0, length);
 
-  const progression = arythmProgression(firstElem, step, length);
+  const progression = buildArythmProgression(firstElem, step, length);
   const elemToReplace = progression[replacementIndex];
   progression[replacementIndex] = '..';
 

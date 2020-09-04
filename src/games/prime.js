@@ -17,7 +17,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const buildQuestion = () => {
+const buildQuestionAndAnswer = () => {
   const from = 1;
   const to = 100;
   const number = genRandInt(from, to);
@@ -29,7 +29,7 @@ const buildQuestion = () => {
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion);
+  runGame(taskDescription, buildQuestionAndAnswer);
 };
 
 export default start;

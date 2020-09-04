@@ -15,7 +15,7 @@ const gcd = (a, b) => {
   return iter(Math.min(a, b));
 };
 
-const buildQuestion = () => {
+const buildQuestionAndAnswer = () => {
   const from = 1;
   const to = 100;
   const number1 = genRandInt(from, to);
@@ -28,7 +28,7 @@ const buildQuestion = () => {
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion);
+  runGame(taskDescription, buildQuestionAndAnswer);
 };
 
 export default start;

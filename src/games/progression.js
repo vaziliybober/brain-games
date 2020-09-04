@@ -13,7 +13,7 @@ const buildArythmProgression = (first, step, length) => {
   return progression;
 };
 
-const buildQuestion = () => {
+const buildQuestionAndAnswer = () => {
   const firstElem = genRandInt(1, 10);
   const step = genRandInt(1, 10);
   const length = 10;
@@ -30,7 +30,7 @@ const buildQuestion = () => {
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion);
+  runGame(taskDescription, buildQuestionAndAnswer);
 };
 
 export default start;

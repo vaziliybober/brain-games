@@ -19,7 +19,7 @@ const parseOperator = (string) => {
   return null;
 };
 
-const buildQuestion = () => {
+const buildQuestionAndAnswer = () => {
   const from = 1;
   const to = 100;
   const operand1 = genRandInt(from, to);
@@ -33,7 +33,7 @@ const buildQuestion = () => {
 };
 
 const start = () => {
-  runGame(taskDescription, buildQuestion);
+  runGame(taskDescription, buildQuestionAndAnswer);
 };
 
 export default start;

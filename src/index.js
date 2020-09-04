@@ -6,10 +6,10 @@ const greet = () => {
   return name;
 };
 
-const runGame = (taskDescription, buildQuestion, winstreak = 3) => {
+const runGame = (taskDescription, buildQuestionAndAnswer, winstreak = 3) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
-      const question = buildQuestion();
+      const question = buildQuestionAndAnswer();
 
       console.log(`Question: ${question.text}`);
       const userAnswer = readlineSync.question('Your answer: ');

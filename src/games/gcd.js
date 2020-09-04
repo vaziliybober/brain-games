@@ -4,12 +4,12 @@ import { genRandInt } from '../util.js';
 const taskDescription = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
-  const iter = (result) => {
-    if (a % result === 0 && b % result === 0) {
-      return result;
+  const iter = (divisor) => {
+    if (a % divisor === 0 && b % divisor === 0) {
+      return divisor;
     }
 
-    return iter(result - 1);
+    return iter(divisor - 1);
   };
 
   return iter(Math.min(a, b));

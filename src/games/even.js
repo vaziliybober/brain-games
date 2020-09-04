@@ -3,9 +3,7 @@ import { genRandInt } from '../util.js';
 
 const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (number) => {
-  return number % 2 === 0;
-}
+const isEven = (number) => number % 2 === 0;
 
 const buildQuestionAndAnswer = () => {
   const from = 1;

@@ -1,11 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const greet = () => {
-  
-
-  return name;
-};
-
 const runGame = (taskDescription, buildQuestionAndAnswer, winstreak = 3) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {

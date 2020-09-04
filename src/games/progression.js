@@ -2,6 +2,7 @@ import runGame from '../index.js';
 import { genRandInt } from '../util.js';
 
 const taskDescription = 'What number is missing in the progression?';
+const progressionLength = 10;
 
 const buildArythmProgression = (first, step, length) => {
   const progression = [];
@@ -16,10 +17,9 @@ const buildArythmProgression = (first, step, length) => {
 const buildQuestionAndAnswer = () => {
   const firstElem = genRandInt(1, 10);
   const step = genRandInt(1, 10);
-  const length = 10;
-  const replacementIndex = genRandInt(0, length);
+  const replacementIndex = genRandInt(0, progressionLength);
 
-  const progression = buildArythmProgression(firstElem, step, length);
+  const progression = buildArythmProgression(firstElem, step, progressionLength);
   const elemToReplace = progression[replacementIndex];
   progression[replacementIndex] = '..';
 

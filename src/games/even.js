@@ -10,7 +10,7 @@ const buildQuestionAndAnswer = () => {
   const number = genRandInt(from, to);
 
   return {
-    text: String(number),
+    question: String(number),
     answer: number % 2 === 0 ? 'yes' : 'no',
   };
 };

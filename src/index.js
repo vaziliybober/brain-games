@@ -9,15 +9,15 @@ const greet = () => {
 const runGame = (taskDescription, buildQuestionAndAnswer, winstreak = 3) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
-      const question = buildQuestionAndAnswer();
+      const questionAndAnswer = buildQuestionAndAnswer();
 
-      console.log(`Question: ${question.text}`);
+      console.log(`Question: ${questionAndAnswer.question}`);
       const userAnswer = readlineSync.question('Your answer: ');
 
-      if (userAnswer === question.answer) {
+      if (userAnswer === questionAndAnswer.answer) {
         console.log('Correct!');
       } else {
-        console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${question.answer}".`);
+        console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${questionAndAnswer.answer}".`);
         return false;
       }
     }

@@ -24,7 +24,7 @@ const buildQuestionAndAnswer = () => {
   progression[replacementIndex] = '..';
 
   return {
-    text: progression.join(' '),
+    question: progression.join(' '),
     answer: String(elemToReplace),
   };
 };

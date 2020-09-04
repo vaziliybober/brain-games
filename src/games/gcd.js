@@ -22,7 +22,7 @@ const buildQuestionAndAnswer = () => {
   const number2 = genRandInt(from, to);
 
   return {
-    text: `${number1} ${number2}`,
+    question: `${number1} ${number2}`,
     answer: String(gcd(number1, number2)),
   };
 };

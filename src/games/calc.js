@@ -27,7 +27,7 @@ const buildQuestionAndAnswer = () => {
   const operatorSign = chooseRandElem(['+', '-', '*']);
 
   return {
-    text: `${operand1} ${operatorSign} ${operand2}`,
+    question: `${operand1} ${operatorSign} ${operand2}`,
     answer: String(parseOperator(operatorSign)(operand1, operand2)),
   };
 };

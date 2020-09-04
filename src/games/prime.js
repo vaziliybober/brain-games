@@ -4,7 +4,7 @@ import { genRandInt } from '../util.js';
 const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number === 1) {
+  if (number <= 1) {
     return false;
   }
 

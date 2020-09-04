@@ -39,8 +39,6 @@ const runGame = (taskDescription, buildQuestion, winstreak = 3) => {
   } else {
     console.log(`Let's try again, ${name}!`);
   }
-
-  return victory;
 };
 
 export default runGame;

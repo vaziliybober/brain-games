@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
-const runGame = (taskDescription, buildQuestionAndAnswer, winstreak = 3) => {
+const winstreak = 3;
+
+const runGame = (taskDescription, buildQuestionAndAnswer) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
       const questionAndAnswer = buildQuestionAndAnswer();

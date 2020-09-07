@@ -20,12 +20,12 @@ const buildQuestionAndAnswer = () => {
   const replacementIndex = genRandInt(0, progressionLength);
 
   const progression = buildArythmProgression(firstElem, step, progressionLength);
-  const elemToReplace = progression[replacementIndex];
+  const answer = progression[replacementIndex];
   progression[replacementIndex] = '..';
 
   return {
     question: progression.join(' '),
-    answer: String(elemToReplace),
+    answer: String(answer),
   };
 };
 

@@ -48,12 +48,20 @@ Is the number prime?
 <a href="https://asciinema.org/a/358983" target="_blank"><img src="https://asciinema.org/a/358983.svg" /></a>
 </details>
 
-# Install
+# Install & Use
 
 	npm install -g @vaziliybober/brain-games
+
+and then start a game (for example, Brain Even): 
+
+	brain-even
 
 or
 
 	git clone https://github.com/vaziliybober/frontend-project-lvl1
 	cd frontend-project-lvl1
 	make install
+
+and start a game with make:
+
+	make brain-even

@@ -1,7 +1,15 @@
 {
-  "name": "brain-games",
+  "name": "@vaziliybober/brain-games",
   "version": "1.0.0",
-  "description": "",
+  "description": "A series of simple mathematical console mini-games",
+  "keywords": [
+    "brain-games",
+    "brain-even",
+    "brain-calc",
+    "brain-gcd",
+    "brain-progression",
+    "brain-prime"
+  ],
   "main": "index.js",
   "type": "module",
   "scripts": {

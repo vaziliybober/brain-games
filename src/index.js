@@ -5,17 +5,17 @@ const winstreak = 3;
 const runGame = (taskDescription, buildQuestionAndAnswer) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
-      const questionAndAnswer = buildQuestionAndAnswer();
+      const {question, answer} = buildQuestionAndAnswer();
 
-      console.log(`Question: ${questionAndAnswer.question}`);
+      console.log(`Question: ${question}`);
       const userAnswer = readlineSync.question('Your answer: ');
-
-      if (userAnswer === questionAndAnswer.answer) {
-        console.log('Correct!');
-      } else {
-        console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${questionAndAnswer.answer}".`);
+      
+      if (userAnswer !== answer) {
+        console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
         return false;
       }
+
+      console.log('Correct!');
     }
 
     return true;

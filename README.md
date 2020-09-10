@@ -1,20 +1,59 @@
-# Brain Games
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vaziliybober/frontend-project-lvl1)
 
 [![Continuous integration workflow](https://github.com/vaziliybober/frontend-project-lvl1/workflows/Continuous%20integration%20workflow/badge.svg)](https://github.com/vaziliybober/frontend-project-lvl1/actions)
 
-brain-even: is the number even?
-[![asciicast](https://asciinema.org/a/356203.svg)](https://asciinema.org/a/356203)
+# Brain Games
 
-brain-calc: what's the result of the expression?
-[![asciicast](https://asciinema.org/a/356400.svg)](https://asciinema.org/a/356400)
+Brain games are a set of simple mathematical console games.
 
-brain-gcd: what's the greatest common divisor of the numbers?
-[![asciicast](https://asciinema.org/a/356402.svg)](https://asciinema.org/a/356402)
+In total there are 5 games: "Brain Even", "Brain Calc", "Brain GCD", "Brain Progression" and "Brain Prime".
 
-brain-progression: what's the missing element in the arythmetic progression?
-[![asciicast](https://asciinema.org/a/356403.svg)](https://asciinema.org/a/356403)
+## Brain Even
 
-brain-prime: is the number prime?
-[![asciicast](https://asciinema.org/a/356426.svg)](https://asciinema.org/a/356426)
+Is the number even?
+
+<details><summary>Show "Brain Even" Demo</summary>
+<a href="https://asciinema.org/a/358977" target="_blank"><img src="https://asciinema.org/a/358977.svg" /></a>
+</details>
+
+## Brain Calc
+
+What is the result of the expression?
+
+<details><summary>Show "Brain Calc" Demo</summary>
+<a href="https://asciinema.org/a/358980" target="_blank"><img src="https://asciinema.org/a/358980.svg" /></a>
+</details>
+
+## Brain GCD
+
+What is the greatest common divisor of the given numbers?
+
+<details><summary>Show "Brain GCD" Demo</summary>
+<a href="https://asciinema.org/a/358981" target="_blank"><img src="https://asciinema.org/a/358981.svg" /></a>
+</details>
+
+## Brain-progression
+
+What is the missing element in the arythmetic progression?
+
+<details><summary>Show "Brain Progression" Demo</summary>
+<a href="https://asciinema.org/a/358982" target="_blank"><img src="https://asciinema.org/a/358982.svg" /></a>
+</details>
+
+## Brain Prime
+
+Is the number prime?
+
+<details><summary>Show "Brain Prime" Demo</summary>
+<a href="https://asciinema.org/a/358983" target="_blank"><img src="https://asciinema.org/a/358983.svg" /></a>
+</details>
+
+# Install
+
+	npm install -g @vaziliybober/brain-games
+
+or
+
+	git clone https://github.com/vaziliybober/frontend-project-lvl1
+	cd frontend-project-lvl1
+	make install

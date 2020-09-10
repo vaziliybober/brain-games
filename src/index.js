@@ -24,6 +24,12 @@ const runGame = (taskDescription, buildQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
+
+  if (name.trim().toLowerCase() === 'no') {
+    console.log('Ok, goodbye then!');
+    return;
+  }
+
   console.log(`Hello, ${name}`);
 
   console.log(taskDescription);

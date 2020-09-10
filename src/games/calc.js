@@ -2,31 +2,20 @@ import runGame from '../index.js';
 import { genRandInt, chooseRandElem } from '../util.js';
 
 const taskDescription = 'What is the result of the expression?';
-const operatorSigns = ['+', '-', '*'];
+const from = 1;
+const to = 100;
 
-const getOperatorBySign = (string) => {
-  if (string === '+') {
-    return (a, b) => a + b;
-  }
-
-  if (string === '-') {
-    return (a, b) => a - b;
-  }
-
-  if (string === '*') {
-    return (a, b) => a * b;
-  }
-
-  return null;
+const mapSignToOperator = {
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '*': (a, b) => a * b,
 };
 
 const buildQuestionAndAnswer = () => {
-  const from = 1;
-  const to = 100;
   const operand1 = genRandInt(from, to);
   const operand2 = genRandInt(from, to);
-  const operatorSign = chooseRandElem(operatorSigns);
-  const operator = getOperatorBySign(operatorSign);
+  const operatorSign = chooseRandElem(Object.keys(mapSignToOperator));
+  const operator = mapSignToOperator[operatorSign];
 
   return {
     question: `${operand1} ${operatorSign} ${operand2}`,

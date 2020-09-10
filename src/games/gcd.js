@@ -2,8 +2,10 @@ import runGame from '../index.js';
 import { genRandInt } from '../util.js';
 
 const taskDescription = 'Find the greatest common divisor of given numbers.';
+const from = 1;
+const to = 100;
 
-const gcd = (a, b) => {  
+const gcd = (a, b) => {
   if (b === 0) {
     return a;
   }
@@ -12,8 +14,6 @@ const gcd = (a, b) => {
 };
 
 const buildQuestionAndAnswer = () => {
-  const from = 1;
-  const to = 100;
   const number1 = genRandInt(from, to);
   const number2 = genRandInt(from, to);
 

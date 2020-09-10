@@ -2,6 +2,8 @@ import runGame from '../index.js';
 import { genRandInt } from '../util.js';
 
 const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const from = 1;
+const to = 100;
 
 const isPrime = (number) => {
   if (number <= 1) {
@@ -18,8 +20,6 @@ const isPrime = (number) => {
 };
 
 const buildQuestionAndAnswer = () => {
-  const from = 1;
-  const to = 100;
   const number = genRandInt(from, to);
 
   return {

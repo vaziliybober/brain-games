@@ -5,11 +5,11 @@ const winstreak = 3;
 const runGame = (taskDescription, buildQuestionAndAnswer) => {
   const play = () => {
     for (let i = 0; i < winstreak; i += 1) {
-      const {question, answer} = buildQuestionAndAnswer();
+      const { question, answer } = buildQuestionAndAnswer();
 
       console.log(`Question: ${question}`);
       const userAnswer = readlineSync.question('Your answer: ');
-      
+
       if (userAnswer !== answer) {
         console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
         return false;

@@ -3,7 +3,7 @@ import { genRandInt, chooseRandElem } from '../util.js';
 
 const taskDescription = 'What is the result of the expression?';
 const from = 1;
-const to = 100;
+const to = 10;
 
 const mapSignToOperator = {
   '+': (a, b) => a + b,

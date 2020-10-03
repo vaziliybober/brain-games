@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vaziliybober/brain-games)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8dfd869b22b2f2066761/maintainability)](https://codeclimate.com/github/vaziliybober/brain-games/maintainability)
 
 [![Continuous integration workflow](https://github.com/vaziliybober/brain-games/workflows/Continuous%20integration%20workflow/badge.svg)](https://github.com/vaziliybober/brain-games/actions)
 
@@ -50,21 +50,19 @@ Is the number prime?
 <a href="https://asciinema.org/a/358983" target="_blank"><img src="https://asciinema.org/a/358983.svg" /></a>
 </details>
 
-# Clone
+## Clone
 
 	git clone https://github.com/vaziliybober/brain-games.git
 	cd brain-games
 	make install
 	make link
 
-# Install
+## Install
 
 	npm install -g @vaziliybober/brain-games
 
-# Use
+## Use
 
 For example, Brain Even:
 
 	brain-even
-
-

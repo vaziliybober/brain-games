@@ -8,6 +8,8 @@ Brain games are a set of simple mathematical console games.
 
 In total there are 5 games: "Brain Even", "Brain Calc", "Brain GCD", "Brain Progression" and "Brain Prime".
 
+This is the lvl-1 frontend project on https://ru.hexlet.io/
+
 ## Brain Even
 
 Is the number even?
@@ -48,20 +50,21 @@ Is the number prime?
 <a href="https://asciinema.org/a/358983" target="_blank"><img src="https://asciinema.org/a/358983.svg" /></a>
 </details>
 
-# Install & Use
-
-	npm install -g @vaziliybober/brain-games
-
-and then start a game (for example, Brain Even): 
-
-	brain-even
-
-or
+# Clone
 
 	git clone https://github.com/vaziliybober/brain-games.git
 	cd brain-games
 	make install
+	make link
 
-and start a game with make:
+# Install
 
-	make brain-even
+	npm install -g @vaziliybober/brain-games
+
+# Use
+
+For example, Brain Even:
+
+	brain-even
+
+

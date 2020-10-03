@@ -1,6 +1,6 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vaziliybober/frontend-project-lvl1)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vaziliybober/brain-games)
 
-[![Continuous integration workflow](https://github.com/vaziliybober/frontend-project-lvl1/workflows/Continuous%20integration%20workflow/badge.svg)](https://github.com/vaziliybober/frontend-project-lvl1/actions)
+[![Continuous integration workflow](https://github.com/vaziliybober/brain-games/workflows/Continuous%20integration%20workflow/badge.svg)](https://github.com/vaziliybober/brain-games/actions)
 
 # Brain Games
 
@@ -58,8 +58,8 @@ and then start a game (for example, Brain Even):
 
 or
 
-	git clone https://github.com/vaziliybober/frontend-project-lvl1
-	cd frontend-project-lvl1
+	git clone https://github.com/vaziliybober/brain-games.git
+	cd brain-games
 	make install
 
 and start a game with make:
